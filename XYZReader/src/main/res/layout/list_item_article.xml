@@ -20,19 +20,20 @@
             android:id="@+id/thumbnail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:background="@color/photo_placeholder" />
+            android:scaleType="fitCenter"
+            android:background="@drawable/ic_crop">
+        </com.example.xyzreader.ui.DynamicHeightNetworkImageView>
 
         <TextView
             android:id="@+id/article_title"
-            style="@style/TextAppearance.AppCompat.Subhead"
+            style="@style/TextAppearance.AppCompat.Title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="16dp"
             android:paddingTop="16dp"
             android:paddingRight="16dp"
             android:paddingBottom="4dp"
-            android:textColor="@color/ltgray"
+            android:textColor="@color/primary_text"
             android:ellipsize="end"
             android:maxLines="4" />
 
