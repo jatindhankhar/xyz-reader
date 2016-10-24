@@ -21,17 +21,19 @@
         <set>
             <objectAnimator
                 android:duration="@android:integer/config_shortAnimTime"
-                android:propertyName="translationZ"
-                android:valueTo="@dimen/fab_press_translation_z"
+                android:propertyName="translationY"
+                android:valueFrom="@dimen/elevation_low"
+                android:valueTo="@dimen/elevation_high"
                 android:valueType="floatType" />
         </set>
     </item>
     <item>
         <set>
             <objectAnimator
-                android:duration="@android:integer/config_shortAnimTime"
                 android:propertyName="translationZ"
-                android:valueTo="0"
+                android:duration="@android:integer/config_shortAnimTime"
+                android:valueFrom="@dimen/elevation_high"
+                android:valueTo="@dimen/elevation_low"
                 android:valueType="floatType" />
         </set>
     </item>
